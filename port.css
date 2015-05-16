@@ -26,6 +26,9 @@ p{
 	margin: 0;
 	text-align: left;
 }
+a:link { color: black; }
+a:visited { color: black; }
+a:hover{ color: #404040;}
 #footer{
 	position: absolute;
 	bottom:0;
