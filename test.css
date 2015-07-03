@@ -49,9 +49,36 @@ h1 a{
   overflow: hidden;
   background: rgba(255, 255, 255, 0.2);
 }
+
 h1 a:hover{
-	background: rgb(25, 181, 254);
+	/* background: rgb(25, 181, 254); 
+	-moz-animation-name: test;
+	-webkit-animation-timing-function: ease-in-out;
+	-o-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out; */
+	-moz-animation: test 0.5s ease-in 1 alternate;
 }
 a{
 	color: white;
+}
+
+@-moz-keyframes test{
+	0%{
+		background: rgba(255, 255, 255, 0.2);
+	}
+	100%{
+		background: rgba(25, 181, 254, 1);
+	}
+}
+
+.anim_1{
+	-moz-animation-timing-function: ease-in-out;
+	-o-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;	
+	-moz-animation: test;
+	-o-animation: test;
+	animation: test;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
 }
